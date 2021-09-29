@@ -1,5 +1,5 @@
 function setParams(config) {
-  console.log(config);
+  // console.log(config);
   const params = config.params || {};
   config.params = Object.assign(params, {
     apikey: process.env.VUE_APP_API_KEY,
@@ -9,8 +9,8 @@ function setParams(config) {
 }
 
 function returnData(res) {
-  console.log(res);
-  return res;
+  // console.log(res);
+  return res.data;
 }
 
 export default function (axios) {
